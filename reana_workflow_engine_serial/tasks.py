@@ -189,7 +189,7 @@ def run_step(
             unpacked_image=step.get("unpacked_image", False),
             kubernetes_uid=step.get("kubernetes_uid", None),
             voms_proxy=step.get("voms_proxy", False),
-            htcondor_max_runtime=step.get("htcondor_max_runtime", False),
+            htcondor_max_runtime=step.get("htcondor_max_runtime", None),
         )
 
         job_spec_copy = dict(job_spec)
